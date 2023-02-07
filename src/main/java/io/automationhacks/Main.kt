@@ -1,7 +1,8 @@
-package io.automationhacks;
+package io.automationhacks
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+object Main {
+    @JvmStatic
+    fun main(args: Array<String>) {
+        println("Hello world!")
     }
 }
