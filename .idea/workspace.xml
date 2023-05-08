@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0feddf9b-68f1-44f9-9c14-802b997085a5" name="Changes" comment="Added README.md">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/automationhacks/CalculatorWithMockTest.kt" afterDir="false" />
+    <list default="true" id="0feddf9b-68f1-44f9-9c14-802b997085a5" name="Changes" comment="Add mocking example">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/automationhacks/ecommerce/Order.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/automationhacks/ecommerce/Warehouse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/automationhacks/ecommerce/OrderStateTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,30 +89,7 @@
       <recent name="io.automationhacks" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CalculatorWithMockTest">
-    <configuration name="CalculatorTest.Test calculator can subtract two numbers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;io.automationhacks.CalculatorTest.Test calculator can subtract two numbers&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Main">
     <configuration name="CalculatorWithMockTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -206,13 +182,20 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Main" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.automationhacks.Main" />
+      <module name="grasp-unit-testing.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Main" />
         <item itemvalue="Gradle.CalculatorWithMockTest" />
         <item itemvalue="Gradle.CalculatorWithMockTest.test mock calculator add method does not return a value for unhandled case" />
         <item itemvalue="Gradle.CalculatorWithMockTest.test mock calculator add method returns mocked value" />
         <item itemvalue="Gradle.CalculatorWithMockTest.test mock calculator add method" />
-        <item itemvalue="Gradle.CalculatorTest.Test calculator can subtract two numbers" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +250,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676449644151</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add mocking example">
+      <created>1680103901733</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680103901733</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add mocking example">
+      <created>1680103917007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680103917007</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add mocking example">
+      <created>1680103925285</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680103925285</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,7 +292,8 @@
     <MESSAGE value="Added sub method" />
     <MESSAGE value="Updated add method to use backticks" />
     <MESSAGE value="Added README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added README.md" />
+    <MESSAGE value="Add mocking example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mocking example" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
