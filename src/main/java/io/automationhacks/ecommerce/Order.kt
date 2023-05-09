@@ -6,14 +6,7 @@ class Order(private val product: String, private val quantity: Int) {
 
     fun fill(warehouse: Warehouse) {
         this.warehouse = warehouse
-
-        isFilled = try {
-            this.warehouse.remove(product, quantity)
-            true
-        } catch (e: Exception) {
-            println(e.message)
-            false
-        }
+        isFilled = this.warehouse.remove(product, quantity)
     }
 
     fun isFilled(): Boolean {

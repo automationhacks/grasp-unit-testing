@@ -6,22 +6,26 @@ class Warehouse {
         warehouse[product] = quantity
     }
 
-    fun remove(product: String, quantity: Int) {
+    fun remove(product: String, quantity: Int): Boolean {
         if (warehouse.contains(product).not()) {
-            throw Exception("Product not found in warehouse")
+            println("Product not found in warehouse")
+            return false
         }
 
         if (warehouse[product] == 0) {
-            throw Exception("No items for this product in the warehouse")
+            println("No items for this product in the warehouse")
+            return false
         }
 
         if (warehouse[product]!! < quantity) {
-            throw Exception("Not enough items in the warehouse")
+            println("Not enough items in the warehouse")
+            return false
         }
 
         val currentQty = warehouse[product]
         val newQty = currentQty!!.minus(quantity)
         warehouse[product] = newQty
+        return true
     }
 
     fun getInventory(product: String): Int? {

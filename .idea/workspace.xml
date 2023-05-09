@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0feddf9b-68f1-44f9-9c14-802b997085a5" name="Changes" comment="Add mocking example">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/automationhacks/ecommerce/Order.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/automationhacks/ecommerce/Warehouse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/automationhacks/ecommerce/OrderStateTest.kt" afterDir="false" />
+    <list default="true" id="0feddf9b-68f1-44f9-9c14-802b997085a5" name="Changes" comment="Adding Order, warehouse and an example test for the application classes">
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/automationhacks/ecommerce/OrderInteractionTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/automationhacks/ecommerce/Order.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/automationhacks/ecommerce/Order.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/automationhacks/ecommerce/Warehouse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/automationhacks/ecommerce/Warehouse.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +89,8 @@
       <recent name="io.automationhacks" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Main">
-    <configuration name="CalculatorWithMockTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.OrderInteractionTest">
+    <configuration name="OrderInteractionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -103,7 +103,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.automationhacks.CalculatorWithMockTest&quot;" />
+            <option value="&quot;io.automationhacks.ecommerce.OrderInteractionTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -113,7 +113,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CalculatorWithMockTest.test mock calculator add method does not return a value for unhandled case" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrderInteractionTest.test warehouse capacity is not reduced when order cannot be fulfilled" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -126,7 +126,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.automationhacks.CalculatorWithMockTest.test mock calculator add method does not return a value for unhandled case&quot;" />
+            <option value="&quot;io.automationhacks.ecommerce.OrderInteractionTest.test warehouse capacity is not reduced when order cannot be fulfilled&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -136,7 +136,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CalculatorWithMockTest.test mock calculator add method returns mocked value" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrderInteractionTest.test warehouse capacity is reduced on fulfilling order" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -149,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.automationhacks.CalculatorWithMockTest.test mock calculator add method returns mocked value&quot;" />
+            <option value="&quot;io.automationhacks.ecommerce.OrderInteractionTest.test warehouse capacity is reduced on fulfilling order&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -159,7 +159,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CalculatorWithMockTest.test mock calculator add method" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrderStateTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -172,7 +172,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;io.automationhacks.CalculatorWithMockTest.test mock calculator add method&quot;" />
+            <option value="&quot;io.automationhacks.ecommerce.OrderStateTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OrderInteractionTest" />
+        <item itemvalue="Gradle.OrderStateTest" />
+        <item itemvalue="Gradle.OrderInteractionTest.test warehouse capacity is not reduced when order cannot be fulfilled" />
+        <item itemvalue="Gradle.OrderInteractionTest.test warehouse capacity is reduced on fulfilling order" />
         <item itemvalue="Kotlin.Main" />
-        <item itemvalue="Gradle.CalculatorWithMockTest" />
-        <item itemvalue="Gradle.CalculatorWithMockTest.test mock calculator add method does not return a value for unhandled case" />
-        <item itemvalue="Gradle.CalculatorWithMockTest.test mock calculator add method returns mocked value" />
-        <item itemvalue="Gradle.CalculatorWithMockTest.test mock calculator add method" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +293,8 @@
     <MESSAGE value="Updated add method to use backticks" />
     <MESSAGE value="Added README.md" />
     <MESSAGE value="Add mocking example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add mocking example" />
+    <MESSAGE value="Adding Order, warehouse and an example test for the application classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Order, warehouse and an example test for the application classes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
